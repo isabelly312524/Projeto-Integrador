@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-exec1',
+  selector: 'app-exerc1',
   standalone: false,
-  templateUrl: './exec1.html',
-  styleUrl: './exec1.css',
+  templateUrl: './exerc1.html',
+  styleUrl: './exerc1.css',
 })
 export class Exerc1 {
   name = 'Carlos';
