@@ -4,8 +4,8 @@ import { Component, signal } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.html',
   standalone: false,
-  styleUrl: './app.scss'
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('ProjetoIntegrador');
+  protected readonly title = signal('projeto-integrador-2');
 }

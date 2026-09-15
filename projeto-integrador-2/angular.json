@@ -7,11 +7,10 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ProjetoIntegrador": {
+    "projeto-integrador-2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
           "standalone": false
         },
         "@schematics/angular:directive": {
@@ -30,7 +29,6 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
@@ -38,7 +36,7 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ]
           },
           "configurations": {
@@ -69,10 +67,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ProjetoIntegrador:build:production"
+              "buildTarget": "projeto-integrador-2:build:production"
             },
             "development": {
-              "buildTarget": "ProjetoIntegrador:build:development"
+              "buildTarget": "projeto-integrador-2:build:development"
             }
           },
           "defaultConfiguration": "development"
