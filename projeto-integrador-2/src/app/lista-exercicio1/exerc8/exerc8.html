@@ -1,0 +1,6 @@
+<p>exerc8 works!</p>
+
+Produto: <input [(ngModel)]="nome" placeholder="Digite o nome do produto"> <br>
+Preço: <input [(ngModel)]="precoFormatado" (input)="formatarPreco($event)" id="preco" placeholder="Digite o preço do produto"> <br>
+Quantidade: <input [(ngModel)]="qnt" placeholder="Digite a quantidade do produto" type="number"> <br>
+Total da compra: {{preco * qnt | currency:'BRL'}} <br>

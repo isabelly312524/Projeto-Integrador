@@ -1,0 +1,9 @@
+<p>exerc9 works!</p>
+
+<p>Controle de estoque</p>
+
+Digite o nome do produto: <input [(ngModel)]="nome" placeholder="Digite o nome do produto"> <br> <br>
+Controle a quantidade em estoque: <br>
+<p>Nome do produto: {{nome}} <br> Quantidade: {{qnt}} </p> <br>
+<button (click)="mais()">Adicionar</button>
+<button (click)="menos()" [disabled] = "!desabilitado">Retirar</button>
