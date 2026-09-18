@@ -1,0 +1,15 @@
+<p>exerc11 works!</p>
+
+<p>Compra de produtos</p>
+
+<p>
+    Produto: Iphone 17 <br>
+    Preço: R$8300,00 <br>
+    Quantidade: {{qnt}} &nbsp <button (click) = "mais()"> + </button> &nbsp <button (click) = "menos()" [disabled] = "!desabilitado"> - </button> <br>
+    Total: {{total}} <br>
+    <button (click) = "adicionar()"> Adicionar ao carrinho </button> 
+
+    <p *ngIf="produto">
+    Produto: Iphone 17 <br>
+    Quantidade: {{qnt}}
+</p>

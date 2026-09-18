@@ -1,0 +1,10 @@
+<p>exerc10 works!</p> 
+
+<p> Usuario: <input [(ngModel)]="user" (ngModelChange)="verificarCampos()" placeholder="Nome de Usuario"> <br>
+    Senha:   <input [(ngModel)]="senha" (ngModelChange)="verificarCampos()" placeholder="Senha" type="password"> <br>
+    <button (click)="entrar()" [disabled]="desabilitado">Entrar</button>
+</p>
+
+<p *ngIf="mostrarBoasVindas">
+    Bem-vindo, {{user}}!
+</p>

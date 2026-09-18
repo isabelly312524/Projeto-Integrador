@@ -11,9 +11,23 @@ import { Exerc6 } from './exerc6/exerc6';
 import { Exerc7 } from './exerc7/exerc7';
 import { Exerc8 } from './exerc8/exerc8';
 import { Exerc9 } from './exerc9/exerc9';
+import { Exerc10 } from './exerc10/exerc10';
+import { Exerc11 } from './exerc11/exerc11';
 
 @NgModule({
-  declarations: [Exerc1, Exerc2, Exerc3, Exerc4, Exerc5, Exerc6, Exerc7, Exerc8, Exerc9],
+  declarations: [
+    Exerc1,
+    Exerc2,
+    Exerc3,
+    Exerc4,
+    Exerc5,
+    Exerc6,
+    Exerc7,
+    Exerc8,
+    Exerc9,
+    Exerc10,
+    Exerc11,
+  ],
   imports: [CommonModule, ListaExercicio1RoutingModule, FormsModule],
 })
 export class ListaExercicio1Module {}
