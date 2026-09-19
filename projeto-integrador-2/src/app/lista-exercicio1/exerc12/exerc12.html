@@ -1,0 +1,19 @@
+<p>exerc12 works!</p>
+<p>Matrícula em curso</p>
+<p>
+    Nome: <input [(ngModel)]="nome" [disabled]="matricula" placeholder="Insira seu nome"> <br>
+    Quantidade de disciplinas: {{qnt}} &nbsp;
+    <button (click)="mais()" [disabled]="matricula">+</button> &nbsp;
+    <button (click)="menos()" [disabled]="desabilitadoMenos || matricula">-</button> <br>
+    <button (click)="matricular()" [disabled]="nomeVazio || matricula">Realizar Matrícula</button>
+</p>
+<p>
+    Informações do aluno: {{nome}} <br>
+    Quantidade de disciplinas: {{qnt}}
+</p>
+
+<p *ngIf="matricula">
+  Matrícula realizada com sucesso! <br>
+  Informações do aluno: {{nome}} <br>
+  Quantidade de disciplinas: {{qnt}}
+</p>

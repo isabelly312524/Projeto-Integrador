@@ -4,9 +4,9 @@
 
 <p>
     Produto: Iphone 17 <br>
-    Preço: R$8300,00 <br>
-    Quantidade: {{qnt}} &nbsp <button (click) = "mais()"> + </button> &nbsp <button (click) = "menos()" [disabled] = "!desabilitado"> - </button> <br>
-    Total: {{total}} <br>
+    Preço: R$8,300.00 <br>
+    Quantidade: {{qnt}} &nbsp; <button (click) = "mais()" [disabled] = "!desabilitado1"> + </button> &nbsp; <button (click) = "menos()" [disabled] = "!desabilitado2"> - </button> <br>
+    Total: {{total | currency: 'BRL'}} <br>
     <button (click) = "adicionar()"> Adicionar ao carrinho </button> 
 
     <p *ngIf="produto">

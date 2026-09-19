@@ -9,27 +9,30 @@ import { Component } from '@angular/core';
 export class Exerc11 {
   qnt = 0;
   total = 0;
-  desabilitado = true;
+  desabilitado1 = true;
+   desabilitado2 = true;
   produto = false;
 
    mais() {
     this.qnt++;
-    this.desabilitado = true;
+    this.desabilitado2 = true;
     this.total = this.qnt * 8300;
   }
 
   menos() {
     if (this.qnt > 1) {
       this.qnt--;
-      this.desabilitado = true;
+      this.desabilitado2 = true;
       this.total = this.qnt * 8300;
     } else if (this.qnt == 1) {
-      this.desabilitado = false;
+      this.desabilitado2 = false;
       this.total = this.qnt * 8300;
     }
   }
 
   adicionar(){
      this.produto = true;
+     this.desabilitado1 = false;
+     this.desabilitado2 = false;
   }
 }
